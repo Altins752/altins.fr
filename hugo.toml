@@ -2,7 +2,9 @@ baseURL = "https://altins752.github.io/altins.fr/"
 languageCode = "fr-FR"
 title = "Altins752 — Security & DevOps"
 theme = "PaperMod"
-paginate = 10
+
+[pagination]
+  pagerSize = 10
 
 [params]
   author = "Altins752"
