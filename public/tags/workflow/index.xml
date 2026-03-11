@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Workflow on Altins752 — Security &amp; DevOps</title>
+    <link>http://localhost:1313/tags/workflow/</link>
+    <description>Recent content in Workflow on Altins752 — Security &amp; DevOps</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comment je rédige et publie mes articles</title>
+      <link>http://localhost:1313/posts/blog_workflow/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/blog_workflow/</guid>
+      <description>Mon workflow de rédaction : de l&amp;#39;idée brute à l&amp;#39;article publié, sans friction.</description>
+      <content:encoded><![CDATA[<h2 id="le-problème-de-la-page-blanche">Le problème de la page blanche</h2>
+<p>Écrire est un frein. Pas parce que je manque d&rsquo;idées ou de sujets — le lab tourne, les explorations s&rsquo;accumulent, les notes aussi. Le problème, c&rsquo;est la transformation : passer d&rsquo;une idée dans la tête à un texte structuré, lisible, publiable.</p>
+<p>Ce frein est réel pour beaucoup de techniciens qui bloguent. On préfère faire plutôt qu&rsquo;écrire. Documenter prend du temps, et ce temps est souvent perçu comme du temps volé à la pratique.</p>
+<p>J&rsquo;ai cherché un workflow qui élimine ce frein. Voici ce que j&rsquo;ai mis en place.</p>
+<hr>
+<h2 id="vue-densemble-du-workflow">Vue d&rsquo;ensemble du workflow</h2>
+<pre class="mermaid">flowchart TD
+    A[Idée] --&gt; B[Dictée vocale]
+    B --&gt; C[Mise en forme assistée]
+    C --&gt; D[Relecture]
+    D --&gt; E[git push]
+    E --&gt; F[En ligne 🚀]
+</pre>
+<p>Chaque étape est volontairement légère. L&rsquo;objectif est de réduire la résistance entre l&rsquo;idée et la publication.</p>
+<hr>
+<h2 id="étape-1--la-dictée-vocale">Étape 1 — La dictée vocale</h2>
+<p>Je dicte mes idées directement dans mon éditeur de texte via un outil de dictée vocale. Pas de clavier, pas de mise en forme, pas de structure à ce stade.</p>
+<p>Je parle comme je penserais à voix haute :</p>
+<ul>
+<li>Qui je suis, ce que j&rsquo;ai exploré</li>
+<li>Ce qui a fonctionné, ce qui a bloqué</li>
+<li>Ce que j&rsquo;en retiens</li>
+</ul>
+<p>La dictée n&rsquo;est pas parfaite — les erreurs de transcription arrivent, surtout sur les noms techniques. Ce n&rsquo;est pas grave. L&rsquo;objectif à cette étape est de <strong>capturer l&rsquo;essentiel</strong>, pas de produire un texte propre.</p>
+<blockquote>
+<p>La valeur est dans les idées, pas dans leur forme initiale.</p>
+</blockquote>
+<hr>
+<h2 id="étape-2--la-mise-en-forme-assistée">Étape 2 — La mise en forme assistée</h2>
+<p>Une fois la dictée brute produite, je la passe à un assistant IA pour la mise en forme. Le rôle de l&rsquo;assistant est précis :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Ce qu&rsquo;il fait</th>
+          <th>Ce qu&rsquo;il ne fait pas</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Structurer en sections logiques</td>
+          <td>Inventer des faits ou du contenu</td>
+      </tr>
+      <tr>
+          <td>Corriger la syntaxe et la grammaire</td>
+          <td>Modifier mes positions ou conclusions</td>
+      </tr>
+      <tr>
+          <td>Ajouter titres, tableaux, blocs de code</td>
+          <td>Changer le fond de ce que j&rsquo;ai dit</td>
+      </tr>
+      <tr>
+          <td>Homogénéiser le ton</td>
+          <td>Réécrire à ma place</td>
+      </tr>
+  </tbody>
+</table>
+<p>Le résultat est un article en Markdown prêt à être relu — avec table des matières, mise en page propre, et tous les éléments Hugo en place.</p>
+<hr>
+<h2 id="étape-3--la-relecture-et-validation">Étape 3 — La relecture et validation</h2>
+<p>C&rsquo;est l&rsquo;étape que je ne délègue pas. Je relis l&rsquo;article en entier avant de publier.</p>
+<p>Je vérifie :</p>
+<ul>
+<li>Que le fond est fidèle à ce que j&rsquo;ai dit</li>
+<li>Que le ton me ressemble</li>
+<li>Que les éléments techniques sont exacts</li>
+<li>Que je suis prêt à assumer chaque ligne publiquement</li>
+</ul>
+<p>Si quelque chose ne sonne pas juste, je corrige directement dans le fichier Markdown. C&rsquo;est mon article, pas celui de l&rsquo;assistant.</p>
+<hr>
+<h2 id="étape-4--la-publication">Étape 4 — La publication</h2>
+<p>Le pipeline de publication est entièrement automatisé via <strong>GitHub Actions</strong> :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Créer l&#39;article</span>
+</span></span><span style="display:flex;"><span>hugo new posts/mon-article.md
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Écrire le contenu, puis publier</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add: titre de l&#39;article&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>GitHub Actions se charge du build Hugo et du déploiement sur GitHub Pages. En moins de deux minutes, l&rsquo;article est en ligne sur <a href="https://altins.fr">altins.fr</a>.</p>
+<hr>
+<h2 id="pourquoi-je-documente-ce-workflow">Pourquoi je documente ce workflow</h2>
+<p>Par transparence. Les articles de ce blog sont le fruit de mes explorations et de mes réflexions — pas d&rsquo;une rédaction académique laborieuse. L&rsquo;assistance à la mise en forme est un outil, comme Vim ou Git. Ce qui compte, c&rsquo;est le contenu, la rigueur technique, et l&rsquo;honnêteté intellectuelle.</p>
+<p>Ce workflow me permet de publier sans friction. Et publier régulièrement, même des notes courtes, est bien plus utile qu&rsquo;attendre l&rsquo;article parfait qui ne vient jamais.</p>
+<p>— <strong>Altins752</strong></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -23,5 +23,322 @@
 </ul>
 ]]></content:encoded>
     </item>
+    <item>
+      <title>Bienvenue sur mon blog</title>
+      <link>http://localhost:1313/posts/bienvenue/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/bienvenue/</guid>
+      <description>Qui je suis, pourquoi ce blog, et ce que vous y trouverez.</description>
+      <content:encoded><![CDATA[<h2 id="qui-suis-je-">Qui suis-je ?</h2>
+<p>Je suis <strong>Altins</strong>, ingénieur système Linux et DevOps Cloud avec une orientation progressive vers la <strong>sécurité appliquée au cloud et aux infrastructures DevOps</strong>.</p>
+<p>Mon quotidien tourne autour de l&rsquo;ingénierie système Linux, de l&rsquo;automatisation et de la gestion d&rsquo;infrastructures cloud. Mais ce qui me anime vraiment, c&rsquo;est quelque chose de plus profond que les titres de poste : la <strong>compréhension des systèmes jusqu&rsquo;à leur fondation</strong>, le plaisir de bidouiller, de casser, de reconstruire — et de comprendre <em>pourquoi</em> ça fonctionne.</p>
+<blockquote>
+<p>&ldquo;Je n&rsquo;aime pas utiliser un outil que je ne comprends pas. Je préfère prendre le temps de comprendre, quitte à y passer la nuit.&rdquo;</p>
+</blockquote>
+<hr>
+<h2 id="pourquoi-ce-blog-">Pourquoi ce blog ?</h2>
+<p>Ce blog est une <strong>vitrine de mon travail et de mes réflexions techniques</strong>. Pas un journal, pas un cours — plutôt un espace où je documente ce que j&rsquo;explore, ce que je construis, et ce que j&rsquo;apprends.</p>
+<p>Il répond à un besoin simple : j&rsquo;ai longtemps travaillé sans laisser de traces. Des heures de lab, des configurations soignées, des problèmes résolus — et rien d&rsquo;écrit. Ce blog change ça.</p>
+<h3 id="ce-que-vous-y-trouverez">Ce que vous y trouverez</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Catégorie</th>
+          <th>Contenu</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>🔐 <strong>Write-ups CTF</strong></td>
+          <td>HackTheBox, TryHackMe — méthodologie et exploitation</td>
+      </tr>
+      <tr>
+          <td>🛠️ <strong>Projets techniques</strong></td>
+          <td>Homelab, infrastructure, automatisation</td>
+      </tr>
+      <tr>
+          <td>☁️ <strong>DevOps &amp; Cloud</strong></td>
+          <td>Kubernetes, CI/CD, IaC, sécurité cloud</td>
+      </tr>
+      <tr>
+          <td>🐧 <strong>Système Linux</strong></td>
+          <td>Administration, optimisation, cas pratiques</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="ma-stack-de-prédilection">Ma stack de prédilection</h2>
+<p>Quelques outils que vous verrez souvent apparaître ici :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Environnement principal</span>
+</span></span><span style="display:flex;"><span>OS:        Linux <span style="color:#f92672">(</span>Fedora / Debian<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Shell:     Zsh + Oh My Zsh
+</span></span><span style="display:flex;"><span>Editor:    Neovim / VS Code
+</span></span><span style="display:flex;"><span>Virt:      Proxmox + Docker + KVM
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DevOps</span>
+</span></span><span style="display:flex;"><span>IaC:       Terraform / Ansible
+</span></span><span style="display:flex;"><span>CI/CD:     GitHub Actions / GitLab CI
+</span></span><span style="display:flex;"><span>Cloud:     OVHcloud / AWS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sécu</span>
+</span></span><span style="display:flex;"><span>Pentest:   Nmap, Burp Suite, Metasploit
+</span></span><span style="display:flex;"><span>CTF:       HackTheBox, TryHackMe
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="ce-que-jexplore-en-ce-moment">Ce que j&rsquo;explore en ce moment</h2>
+<p>La sécurité offensive appliquée au cloud et aux pipelines DevOps m&rsquo;attire particulièrement. La surface d&rsquo;attaque des infrastructures modernes — misconfiguration IAM, secrets exposés dans les pipelines CI/CD, lateral movement dans un cluster Kubernetes — c&rsquo;est un terrain que je veux maîtriser aussi bien offensivement que défensivement.</p>
+<blockquote>
+<p><strong>DevSecOps</strong> ne devrait pas être un buzzword. C&rsquo;est une façon de penser l&rsquo;infrastructure dès la conception.</p>
+</blockquote>
+<hr>
+<h2 id="pour-conclure">Pour conclure</h2>
+<p>Si vous êtes ici, c&rsquo;est probablement que vous partagez un intérêt pour les systèmes, la sécurité, ou les infrastructures. Bienvenue.</p>
+<p>Les articles arrivent. Le lab tourne. La curiosité, elle, ne s&rsquo;arrête jamais.</p>
+<p>— <strong>Altins752</strong></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Comment je rédige et publie mes articles</title>
+      <link>http://localhost:1313/posts/blog_workflow/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/blog_workflow/</guid>
+      <description>Mon workflow de rédaction : de l&amp;#39;idée brute à l&amp;#39;article publié, sans friction.</description>
+      <content:encoded><![CDATA[<h2 id="le-problème-de-la-page-blanche">Le problème de la page blanche</h2>
+<p>Écrire est un frein. Pas parce que je manque d&rsquo;idées ou de sujets — le lab tourne, les explorations s&rsquo;accumulent, les notes aussi. Le problème, c&rsquo;est la transformation : passer d&rsquo;une idée dans la tête à un texte structuré, lisible, publiable.</p>
+<p>Ce frein est réel pour beaucoup de techniciens qui bloguent. On préfère faire plutôt qu&rsquo;écrire. Documenter prend du temps, et ce temps est souvent perçu comme du temps volé à la pratique.</p>
+<p>J&rsquo;ai cherché un workflow qui élimine ce frein. Voici ce que j&rsquo;ai mis en place.</p>
+<hr>
+<h2 id="vue-densemble-du-workflow">Vue d&rsquo;ensemble du workflow</h2>
+<pre class="mermaid">flowchart TD
+    A[Idée] --&gt; B[Dictée vocale]
+    B --&gt; C[Mise en forme assistée]
+    C --&gt; D[Relecture]
+    D --&gt; E[git push]
+    E --&gt; F[En ligne 🚀]
+</pre>
+<p>Chaque étape est volontairement légère. L&rsquo;objectif est de réduire la résistance entre l&rsquo;idée et la publication.</p>
+<hr>
+<h2 id="étape-1--la-dictée-vocale">Étape 1 — La dictée vocale</h2>
+<p>Je dicte mes idées directement dans mon éditeur de texte via un outil de dictée vocale. Pas de clavier, pas de mise en forme, pas de structure à ce stade.</p>
+<p>Je parle comme je penserais à voix haute :</p>
+<ul>
+<li>Qui je suis, ce que j&rsquo;ai exploré</li>
+<li>Ce qui a fonctionné, ce qui a bloqué</li>
+<li>Ce que j&rsquo;en retiens</li>
+</ul>
+<p>La dictée n&rsquo;est pas parfaite — les erreurs de transcription arrivent, surtout sur les noms techniques. Ce n&rsquo;est pas grave. L&rsquo;objectif à cette étape est de <strong>capturer l&rsquo;essentiel</strong>, pas de produire un texte propre.</p>
+<blockquote>
+<p>La valeur est dans les idées, pas dans leur forme initiale.</p>
+</blockquote>
+<hr>
+<h2 id="étape-2--la-mise-en-forme-assistée">Étape 2 — La mise en forme assistée</h2>
+<p>Une fois la dictée brute produite, je la passe à un assistant IA pour la mise en forme. Le rôle de l&rsquo;assistant est précis :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Ce qu&rsquo;il fait</th>
+          <th>Ce qu&rsquo;il ne fait pas</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Structurer en sections logiques</td>
+          <td>Inventer des faits ou du contenu</td>
+      </tr>
+      <tr>
+          <td>Corriger la syntaxe et la grammaire</td>
+          <td>Modifier mes positions ou conclusions</td>
+      </tr>
+      <tr>
+          <td>Ajouter titres, tableaux, blocs de code</td>
+          <td>Changer le fond de ce que j&rsquo;ai dit</td>
+      </tr>
+      <tr>
+          <td>Homogénéiser le ton</td>
+          <td>Réécrire à ma place</td>
+      </tr>
+  </tbody>
+</table>
+<p>Le résultat est un article en Markdown prêt à être relu — avec table des matières, mise en page propre, et tous les éléments Hugo en place.</p>
+<hr>
+<h2 id="étape-3--la-relecture-et-validation">Étape 3 — La relecture et validation</h2>
+<p>C&rsquo;est l&rsquo;étape que je ne délègue pas. Je relis l&rsquo;article en entier avant de publier.</p>
+<p>Je vérifie :</p>
+<ul>
+<li>Que le fond est fidèle à ce que j&rsquo;ai dit</li>
+<li>Que le ton me ressemble</li>
+<li>Que les éléments techniques sont exacts</li>
+<li>Que je suis prêt à assumer chaque ligne publiquement</li>
+</ul>
+<p>Si quelque chose ne sonne pas juste, je corrige directement dans le fichier Markdown. C&rsquo;est mon article, pas celui de l&rsquo;assistant.</p>
+<hr>
+<h2 id="étape-4--la-publication">Étape 4 — La publication</h2>
+<p>Le pipeline de publication est entièrement automatisé via <strong>GitHub Actions</strong> :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Créer l&#39;article</span>
+</span></span><span style="display:flex;"><span>hugo new posts/mon-article.md
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Écrire le contenu, puis publier</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add: titre de l&#39;article&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>GitHub Actions se charge du build Hugo et du déploiement sur GitHub Pages. En moins de deux minutes, l&rsquo;article est en ligne sur <a href="https://altins.fr">altins.fr</a>.</p>
+<hr>
+<h2 id="pourquoi-je-documente-ce-workflow">Pourquoi je documente ce workflow</h2>
+<p>Par transparence. Les articles de ce blog sont le fruit de mes explorations et de mes réflexions — pas d&rsquo;une rédaction académique laborieuse. L&rsquo;assistance à la mise en forme est un outil, comme Vim ou Git. Ce qui compte, c&rsquo;est le contenu, la rigueur technique, et l&rsquo;honnêteté intellectuelle.</p>
+<p>Ce workflow me permet de publier sans friction. Et publier régulièrement, même des notes courtes, est bien plus utile qu&rsquo;attendre l&rsquo;article parfait qui ne vient jamais.</p>
+<p>— <strong>Altins752</strong></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Exploration : OpenClaw, Ollama et les limites du CPU</title>
+      <link>http://localhost:1313/posts/openclaw_discover/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/openclaw_discover/</guid>
+      <description>Un tour rapide de mes expériences avec OpenClaw et Ollama sur mon serveur dédié CPU-only — et pourquoi j&amp;#39;ai vite freiné.</description>
+      <content:encoded><![CDATA[<h2 id="le-contexte">Le contexte</h2>
+<p>Hier soir, je suis tombé dans le terrier du lapin. OpenClaw — anciennement Clawdbot puis Moltbot — a explosé sur GitHub début 2026 avec plus de 100 000 étoiles en quelques jours. L&rsquo;idée est simple et séduisante : un agent IA personnel, open-source, auto-hébergé, qui tourne sur votre propre machine et répond via WhatsApp, Telegram ou Discord. Pas de cloud tiers, pas de données qui partent ailleurs. Votre infrastructure, vos règles.</p>
+<blockquote>
+<p>&ldquo;Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞&rdquo;</p>
+<p>— OpenClaw</p>
+</blockquote>
+<p>Ça m&rsquo;a intéressé immédiatement. Je voulais comprendre comment ça fonctionnait, et surtout voir si je pouvais faire tourner ça sur mon serveur dédié.</p>
+<hr>
+<h2 id="linstallation-dollama">L&rsquo;installation d&rsquo;Ollama</h2>
+<p>Avant de connecter OpenClaw à quoi que ce soit, il faut un modèle qui tourne en local. Pour ça, <strong>Ollama</strong> est la solution standard — un runtime qui permet de télécharger et exécuter des LLMs localement en quelques commandes.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Installation d&#39;Ollama sur Debian</span>
+</span></span><span style="display:flex;"><span>curl -fsSL https://ollama.com/install.sh | sh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Télécharger et lancer Qwen3</span>
+</span></span><span style="display:flex;"><span>ollama pull qwen3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Télécharger Mistral Small</span>
+</span></span><span style="display:flex;"><span>ollama pull mistral-small
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Vérifier les modèles disponibles</span>
+</span></span><span style="display:flex;"><span>ollama list
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>L&rsquo;installation est propre, le tooling est bien fait. En quelques minutes, les modèles tournent et exposent une API locale compatible OpenAI sur <code>http://localhost:11434</code>.</p>
+<hr>
+<h2 id="le-problème--cpu-only">Le problème : CPU-only</h2>
+<p>C&rsquo;est là que les choses se compliquent. Mon serveur dédié n&rsquo;a <strong>pas de GPU</strong>. Or, faire tourner un LLM sur CPU uniquement, c&rsquo;est une expérience de patience :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Modèle</th>
+          <th>Matériel</th>
+          <th>Temps de réponse estimé</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Qwen3 7B</td>
+          <td>CPU only</td>
+          <td>30–120 secondes/réponse</td>
+      </tr>
+      <tr>
+          <td>Mistral Small</td>
+          <td>CPU only</td>
+          <td>20–90 secondes/réponse</td>
+      </tr>
+      <tr>
+          <td>Mistral Small</td>
+          <td>RTX 3080</td>
+          <td>2–5 secondes/réponse</td>
+      </tr>
+  </tbody>
+</table>
+<p>Pour un usage interactif via OpenClaw, c&rsquo;est rédhibitoire. Attendre deux minutes entre chaque échange, ce n&rsquo;est pas un assistant — c&rsquo;est une torture.</p>
+<hr>
+<h2 id="lalternative--les-api-cloud">L&rsquo;alternative : les API cloud</h2>
+<p>Face à cette limitation hardware, j&rsquo;ai regardé les options d&rsquo;API pour brancher OpenClaw sur un modèle distant plutôt que local. OpenClaw est <strong>model-agnostic</strong> : il peut utiliser n&rsquo;importe quel provider compatible OpenAI, que ce soit Anthropic, OpenAI, Mistral AI, ou d&rsquo;autres.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Exemple de config OpenClaw avec provider externe</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">providers</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mistral</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">openai-compatible</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">baseUrl</span>: <span style="color:#ae81ff">https://api.mistral.ai/v1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">apiKey</span>: <span style="color:#ae81ff">${MISTRAL_API_KEY}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">model</span>: <span style="color:#ae81ff">mistral-small-latest</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Les tarifs sont accessibles — quelques centimes par millier de tokens — mais l&rsquo;usage d&rsquo;un agent autonome qui tourne 24h/24 peut vite déraper. Un agent qui monitore, répond, initie des actions en arrière-plan&hellip; la facture peut monter sans prévenir.</p>
+<hr>
+<h2 id="pourquoi-jai-stoppé-là">Pourquoi j&rsquo;ai stoppé là</h2>
+<p>J&rsquo;ai décidé de ne pas me lancer dans cette direction, pour une raison simple : <strong>le risque financier non maîtrisé</strong>.</p>
+<p>Un agent autonome connecté à une API payante, sans limite stricte configurée, c&rsquo;est une surface d&rsquo;exposition financière que je ne voulais pas gérer ce soir-là. Ce n&rsquo;est pas une question de coût absolu, c&rsquo;est une question de contrôle.</p>
+<blockquote>
+<p>Avant de connecter quoi que ce soit à une API facturée à l&rsquo;usage, il faut poser des limites claires : budget max, alertes, kill switch. Sinon, c&rsquo;est une mauvaise surprise garantie.</p>
+</blockquote>
+<hr>
+<h2 id="ce-que-jen-retiens">Ce que j&rsquo;en retiens</h2>
+<p>Cette exploration rapide m&rsquo;a confirmé quelques points :</p>
+<ul>
+<li><strong>Ollama</strong> est mature et simple à déployer — à garder sous la main pour du lab local</li>
+<li><strong>OpenClaw</strong> est un projet intéressant, surtout pour un homelab avec un peu de GPU</li>
+<li><strong>CPU-only pour les LLMs</strong>, c&rsquo;est viable uniquement pour du batch ou du test, pas de l&rsquo;interactif</li>
+<li>La prochaine étape logique serait un nœud avec GPU dédié — sujet pour un futur article</li>
+</ul>
+<p>Je reviendrai sur OpenClaw quand mon infrastructure sera mieux adaptée. En attendant, le lab continue.</p>
+<p>— <strong>Altins752</strong></p>
+]]></content:encoded>
+    </item>
   </channel>
 </rss>

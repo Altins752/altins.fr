@@ -6,7 +6,6 @@ tags: ["meta", "workflow", "écriture", "outillage"]
 description: "Mon workflow de rédaction : de l'idée brute à l'article publié, sans friction."
 showToc: true
 TocOpen: false
-mermaid: true
 ---
 
 ## Le problème de la page blanche

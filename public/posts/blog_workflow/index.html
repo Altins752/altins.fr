@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="dark">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Comment je rédige et publie mes articles | Altins752 — Security &amp; DevOps</title>
+<meta name="keywords" content="meta, workflow, écriture, outillage">
+<meta name="description" content="Mon workflow de rédaction : de l&#39;idée brute à l&#39;article publié, sans friction.">
+<meta name="author" content="Altins752">
+<link rel="canonical" href="http://localhost:1313/posts/blog_workflow/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/blog_workflow/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Altins752 — Security &amp; DevOps (Alt + H)">Altins752 — Security &amp; DevOps</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects/" title="Projets">
+                    <span>Projets</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="À propos">
+                    <span>À propos</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Comment je rédige et publie mes articles
+    </h1>
+    <div class="post-description">
+      Mon workflow de rédaction : de l&#39;idée brute à l&#39;article publié, sans friction.
+    </div>
+    <div class="post-meta"><span title='2026-03-11 00:00:00 +0000 UTC'>March 11, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Altins752</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#le-probl%c3%a8me-de-la-page-blanche" aria-label="Le problème de la page blanche">Le problème de la page blanche</a></li>
+                <li>
+                    <a href="#vue-densemble-du-workflow" aria-label="Vue d&rsquo;ensemble du workflow">Vue d&rsquo;ensemble du workflow</a></li>
+                <li>
+                    <a href="#%c3%a9tape-1--la-dict%c3%a9e-vocale" aria-label="Étape 1 — La dictée vocale">Étape 1 — La dictée vocale</a></li>
+                <li>
+                    <a href="#%c3%a9tape-2--la-mise-en-forme-assist%c3%a9e" aria-label="Étape 2 — La mise en forme assistée">Étape 2 — La mise en forme assistée</a></li>
+                <li>
+                    <a href="#%c3%a9tape-3--la-relecture-et-validation" aria-label="Étape 3 — La relecture et validation">Étape 3 — La relecture et validation</a></li>
+                <li>
+                    <a href="#%c3%a9tape-4--la-publication" aria-label="Étape 4 — La publication">Étape 4 — La publication</a></li>
+                <li>
+                    <a href="#pourquoi-je-documente-ce-workflow" aria-label="Pourquoi je documente ce workflow">Pourquoi je documente ce workflow</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="le-problème-de-la-page-blanche">Le problème de la page blanche<a hidden class="anchor" aria-hidden="true" href="#le-problème-de-la-page-blanche">#</a></h2>
+<p>Écrire est un frein. Pas parce que je manque d&rsquo;idées ou de sujets — le lab tourne, les explorations s&rsquo;accumulent, les notes aussi. Le problème, c&rsquo;est la transformation : passer d&rsquo;une idée dans la tête à un texte structuré, lisible, publiable.</p>
+<p>Ce frein est réel pour beaucoup de techniciens qui bloguent. On préfère faire plutôt qu&rsquo;écrire. Documenter prend du temps, et ce temps est souvent perçu comme du temps volé à la pratique.</p>
+<p>J&rsquo;ai cherché un workflow qui élimine ce frein. Voici ce que j&rsquo;ai mis en place.</p>
+<hr>
+<h2 id="vue-densemble-du-workflow">Vue d&rsquo;ensemble du workflow<a hidden class="anchor" aria-hidden="true" href="#vue-densemble-du-workflow">#</a></h2>
+<pre class="mermaid">flowchart TD
+    A[Idée] --&gt; B[Dictée vocale]
+    B --&gt; C[Mise en forme assistée]
+    C --&gt; D[Relecture]
+    D --&gt; E[git push]
+    E --&gt; F[En ligne 🚀]
+</pre>
+<p>Chaque étape est volontairement légère. L&rsquo;objectif est de réduire la résistance entre l&rsquo;idée et la publication.</p>
+<hr>
+<h2 id="étape-1--la-dictée-vocale">Étape 1 — La dictée vocale<a hidden class="anchor" aria-hidden="true" href="#étape-1--la-dictée-vocale">#</a></h2>
+<p>Je dicte mes idées directement dans mon éditeur de texte via un outil de dictée vocale. Pas de clavier, pas de mise en forme, pas de structure à ce stade.</p>
+<p>Je parle comme je penserais à voix haute :</p>
+<ul>
+<li>Qui je suis, ce que j&rsquo;ai exploré</li>
+<li>Ce qui a fonctionné, ce qui a bloqué</li>
+<li>Ce que j&rsquo;en retiens</li>
+</ul>
+<p>La dictée n&rsquo;est pas parfaite — les erreurs de transcription arrivent, surtout sur les noms techniques. Ce n&rsquo;est pas grave. L&rsquo;objectif à cette étape est de <strong>capturer l&rsquo;essentiel</strong>, pas de produire un texte propre.</p>
+<blockquote>
+<p>La valeur est dans les idées, pas dans leur forme initiale.</p>
+</blockquote>
+<hr>
+<h2 id="étape-2--la-mise-en-forme-assistée">Étape 2 — La mise en forme assistée<a hidden class="anchor" aria-hidden="true" href="#étape-2--la-mise-en-forme-assistée">#</a></h2>
+<p>Une fois la dictée brute produite, je la passe à un assistant IA pour la mise en forme. Le rôle de l&rsquo;assistant est précis :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Ce qu&rsquo;il fait</th>
+          <th>Ce qu&rsquo;il ne fait pas</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Structurer en sections logiques</td>
+          <td>Inventer des faits ou du contenu</td>
+      </tr>
+      <tr>
+          <td>Corriger la syntaxe et la grammaire</td>
+          <td>Modifier mes positions ou conclusions</td>
+      </tr>
+      <tr>
+          <td>Ajouter titres, tableaux, blocs de code</td>
+          <td>Changer le fond de ce que j&rsquo;ai dit</td>
+      </tr>
+      <tr>
+          <td>Homogénéiser le ton</td>
+          <td>Réécrire à ma place</td>
+      </tr>
+  </tbody>
+</table>
+<p>Le résultat est un article en Markdown prêt à être relu — avec table des matières, mise en page propre, et tous les éléments Hugo en place.</p>
+<hr>
+<h2 id="étape-3--la-relecture-et-validation">Étape 3 — La relecture et validation<a hidden class="anchor" aria-hidden="true" href="#étape-3--la-relecture-et-validation">#</a></h2>
+<p>C&rsquo;est l&rsquo;étape que je ne délègue pas. Je relis l&rsquo;article en entier avant de publier.</p>
+<p>Je vérifie :</p>
+<ul>
+<li>Que le fond est fidèle à ce que j&rsquo;ai dit</li>
+<li>Que le ton me ressemble</li>
+<li>Que les éléments techniques sont exacts</li>
+<li>Que je suis prêt à assumer chaque ligne publiquement</li>
+</ul>
+<p>Si quelque chose ne sonne pas juste, je corrige directement dans le fichier Markdown. C&rsquo;est mon article, pas celui de l&rsquo;assistant.</p>
+<hr>
+<h2 id="étape-4--la-publication">Étape 4 — La publication<a hidden class="anchor" aria-hidden="true" href="#étape-4--la-publication">#</a></h2>
+<p>Le pipeline de publication est entièrement automatisé via <strong>GitHub Actions</strong> :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Créer l&#39;article</span>
+</span></span><span style="display:flex;"><span>hugo new posts/mon-article.md
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Écrire le contenu, puis publier</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add: titre de l&#39;article&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>GitHub Actions se charge du build Hugo et du déploiement sur GitHub Pages. En moins de deux minutes, l&rsquo;article est en ligne sur <a href="https://altins.fr">altins.fr</a>.</p>
+<hr>
+<h2 id="pourquoi-je-documente-ce-workflow">Pourquoi je documente ce workflow<a hidden class="anchor" aria-hidden="true" href="#pourquoi-je-documente-ce-workflow">#</a></h2>
+<p>Par transparence. Les articles de ce blog sont le fruit de mes explorations et de mes réflexions — pas d&rsquo;une rédaction académique laborieuse. L&rsquo;assistance à la mise en forme est un outil, comme Vim ou Git. Ce qui compte, c&rsquo;est le contenu, la rigueur technique, et l&rsquo;honnêteté intellectuelle.</p>
+<p>Ce workflow me permet de publier sans friction. Et publier régulièrement, même des notes courtes, est bien plus utile qu&rsquo;attendre l&rsquo;article parfait qui ne vient jamais.</p>
+<p>— <strong>Altins752</strong></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/meta/">Meta</a></li>
+      <li><a href="http://localhost:1313/tags/workflow/">Workflow</a></li>
+      <li><a href="http://localhost:1313/tags/%C3%A9criture/">Écriture</a></li>
+      <li><a href="http://localhost:1313/tags/outillage/">Outillage</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/bienvenue/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Bienvenue sur mon blog</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/openclaw_discover/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Exploration : OpenClaw, Ollama et les limites du CPU</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Altins752 — Security &amp; DevOps</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

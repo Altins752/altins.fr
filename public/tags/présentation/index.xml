@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Présentation on Altins752 — Security &amp; DevOps</title>
+    <link>http://localhost:1313/tags/pr%C3%A9sentation/</link>
+    <description>Recent content in Présentation on Altins752 — Security &amp; DevOps</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pr%C3%A9sentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bienvenue sur mon blog</title>
+      <link>http://localhost:1313/posts/bienvenue/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/bienvenue/</guid>
+      <description>Qui je suis, pourquoi ce blog, et ce que vous y trouverez.</description>
+      <content:encoded><![CDATA[<h2 id="qui-suis-je-">Qui suis-je ?</h2>
+<p>Je suis <strong>Altins</strong>, ingénieur système Linux et DevOps Cloud avec une orientation progressive vers la <strong>sécurité appliquée au cloud et aux infrastructures DevOps</strong>.</p>
+<p>Mon quotidien tourne autour de l&rsquo;ingénierie système Linux, de l&rsquo;automatisation et de la gestion d&rsquo;infrastructures cloud. Mais ce qui me anime vraiment, c&rsquo;est quelque chose de plus profond que les titres de poste : la <strong>compréhension des systèmes jusqu&rsquo;à leur fondation</strong>, le plaisir de bidouiller, de casser, de reconstruire — et de comprendre <em>pourquoi</em> ça fonctionne.</p>
+<blockquote>
+<p>&ldquo;Je n&rsquo;aime pas utiliser un outil que je ne comprends pas. Je préfère prendre le temps de comprendre, quitte à y passer la nuit.&rdquo;</p>
+</blockquote>
+<hr>
+<h2 id="pourquoi-ce-blog-">Pourquoi ce blog ?</h2>
+<p>Ce blog est une <strong>vitrine de mon travail et de mes réflexions techniques</strong>. Pas un journal, pas un cours — plutôt un espace où je documente ce que j&rsquo;explore, ce que je construis, et ce que j&rsquo;apprends.</p>
+<p>Il répond à un besoin simple : j&rsquo;ai longtemps travaillé sans laisser de traces. Des heures de lab, des configurations soignées, des problèmes résolus — et rien d&rsquo;écrit. Ce blog change ça.</p>
+<h3 id="ce-que-vous-y-trouverez">Ce que vous y trouverez</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Catégorie</th>
+          <th>Contenu</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>🔐 <strong>Write-ups CTF</strong></td>
+          <td>HackTheBox, TryHackMe — méthodologie et exploitation</td>
+      </tr>
+      <tr>
+          <td>🛠️ <strong>Projets techniques</strong></td>
+          <td>Homelab, infrastructure, automatisation</td>
+      </tr>
+      <tr>
+          <td>☁️ <strong>DevOps &amp; Cloud</strong></td>
+          <td>Kubernetes, CI/CD, IaC, sécurité cloud</td>
+      </tr>
+      <tr>
+          <td>🐧 <strong>Système Linux</strong></td>
+          <td>Administration, optimisation, cas pratiques</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="ma-stack-de-prédilection">Ma stack de prédilection</h2>
+<p>Quelques outils que vous verrez souvent apparaître ici :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Environnement principal</span>
+</span></span><span style="display:flex;"><span>OS:        Linux <span style="color:#f92672">(</span>Fedora / Debian<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Shell:     Zsh + Oh My Zsh
+</span></span><span style="display:flex;"><span>Editor:    Neovim / VS Code
+</span></span><span style="display:flex;"><span>Virt:      Proxmox + Docker + KVM
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DevOps</span>
+</span></span><span style="display:flex;"><span>IaC:       Terraform / Ansible
+</span></span><span style="display:flex;"><span>CI/CD:     GitHub Actions / GitLab CI
+</span></span><span style="display:flex;"><span>Cloud:     OVHcloud / AWS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sécu</span>
+</span></span><span style="display:flex;"><span>Pentest:   Nmap, Burp Suite, Metasploit
+</span></span><span style="display:flex;"><span>CTF:       HackTheBox, TryHackMe
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="ce-que-jexplore-en-ce-moment">Ce que j&rsquo;explore en ce moment</h2>
+<p>La sécurité offensive appliquée au cloud et aux pipelines DevOps m&rsquo;attire particulièrement. La surface d&rsquo;attaque des infrastructures modernes — misconfiguration IAM, secrets exposés dans les pipelines CI/CD, lateral movement dans un cluster Kubernetes — c&rsquo;est un terrain que je veux maîtriser aussi bien offensivement que défensivement.</p>
+<blockquote>
+<p><strong>DevSecOps</strong> ne devrait pas être un buzzword. C&rsquo;est une façon de penser l&rsquo;infrastructure dès la conception.</p>
+</blockquote>
+<hr>
+<h2 id="pour-conclure">Pour conclure</h2>
+<p>Si vous êtes ici, c&rsquo;est probablement que vous partagez un intérêt pour les systèmes, la sécurité, ou les infrastructures. Bienvenue.</p>
+<p>Les articles arrivent. Le lab tourne. La curiosité, elle, ne s&rsquo;arrête jamais.</p>
+<p>— <strong>Altins752</strong></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

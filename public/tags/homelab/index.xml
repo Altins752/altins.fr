@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Homelab on Altins752 — Security &amp; DevOps</title>
+    <link>http://localhost:1313/tags/homelab/</link>
+    <description>Recent content in Homelab on Altins752 — Security &amp; DevOps</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploration : OpenClaw, Ollama et les limites du CPU</title>
+      <link>http://localhost:1313/posts/openclaw_discover/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/openclaw_discover/</guid>
+      <description>Un tour rapide de mes expériences avec OpenClaw et Ollama sur mon serveur dédié CPU-only — et pourquoi j&amp;#39;ai vite freiné.</description>
+      <content:encoded><![CDATA[<h2 id="le-contexte">Le contexte</h2>
+<p>Hier soir, je suis tombé dans le terrier du lapin. OpenClaw — anciennement Clawdbot puis Moltbot — a explosé sur GitHub début 2026 avec plus de 100 000 étoiles en quelques jours. L&rsquo;idée est simple et séduisante : un agent IA personnel, open-source, auto-hébergé, qui tourne sur votre propre machine et répond via WhatsApp, Telegram ou Discord. Pas de cloud tiers, pas de données qui partent ailleurs. Votre infrastructure, vos règles.</p>
+<blockquote>
+<p>&ldquo;Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞&rdquo;</p>
+<p>— OpenClaw</p>
+</blockquote>
+<p>Ça m&rsquo;a intéressé immédiatement. Je voulais comprendre comment ça fonctionnait, et surtout voir si je pouvais faire tourner ça sur mon serveur dédié.</p>
+<hr>
+<h2 id="linstallation-dollama">L&rsquo;installation d&rsquo;Ollama</h2>
+<p>Avant de connecter OpenClaw à quoi que ce soit, il faut un modèle qui tourne en local. Pour ça, <strong>Ollama</strong> est la solution standard — un runtime qui permet de télécharger et exécuter des LLMs localement en quelques commandes.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Installation d&#39;Ollama sur Debian</span>
+</span></span><span style="display:flex;"><span>curl -fsSL https://ollama.com/install.sh | sh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Télécharger et lancer Qwen3</span>
+</span></span><span style="display:flex;"><span>ollama pull qwen3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Télécharger Mistral Small</span>
+</span></span><span style="display:flex;"><span>ollama pull mistral-small
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Vérifier les modèles disponibles</span>
+</span></span><span style="display:flex;"><span>ollama list
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>L&rsquo;installation est propre, le tooling est bien fait. En quelques minutes, les modèles tournent et exposent une API locale compatible OpenAI sur <code>http://localhost:11434</code>.</p>
+<hr>
+<h2 id="le-problème--cpu-only">Le problème : CPU-only</h2>
+<p>C&rsquo;est là que les choses se compliquent. Mon serveur dédié n&rsquo;a <strong>pas de GPU</strong>. Or, faire tourner un LLM sur CPU uniquement, c&rsquo;est une expérience de patience :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Modèle</th>
+          <th>Matériel</th>
+          <th>Temps de réponse estimé</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Qwen3 7B</td>
+          <td>CPU only</td>
+          <td>30–120 secondes/réponse</td>
+      </tr>
+      <tr>
+          <td>Mistral Small</td>
+          <td>CPU only</td>
+          <td>20–90 secondes/réponse</td>
+      </tr>
+      <tr>
+          <td>Mistral Small</td>
+          <td>RTX 3080</td>
+          <td>2–5 secondes/réponse</td>
+      </tr>
+  </tbody>
+</table>
+<p>Pour un usage interactif via OpenClaw, c&rsquo;est rédhibitoire. Attendre deux minutes entre chaque échange, ce n&rsquo;est pas un assistant — c&rsquo;est une torture.</p>
+<hr>
+<h2 id="lalternative--les-api-cloud">L&rsquo;alternative : les API cloud</h2>
+<p>Face à cette limitation hardware, j&rsquo;ai regardé les options d&rsquo;API pour brancher OpenClaw sur un modèle distant plutôt que local. OpenClaw est <strong>model-agnostic</strong> : il peut utiliser n&rsquo;importe quel provider compatible OpenAI, que ce soit Anthropic, OpenAI, Mistral AI, ou d&rsquo;autres.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Exemple de config OpenClaw avec provider externe</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">providers</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mistral</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">openai-compatible</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">baseUrl</span>: <span style="color:#ae81ff">https://api.mistral.ai/v1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">apiKey</span>: <span style="color:#ae81ff">${MISTRAL_API_KEY}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">model</span>: <span style="color:#ae81ff">mistral-small-latest</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Les tarifs sont accessibles — quelques centimes par millier de tokens — mais l&rsquo;usage d&rsquo;un agent autonome qui tourne 24h/24 peut vite déraper. Un agent qui monitore, répond, initie des actions en arrière-plan&hellip; la facture peut monter sans prévenir.</p>
+<hr>
+<h2 id="pourquoi-jai-stoppé-là">Pourquoi j&rsquo;ai stoppé là</h2>
+<p>J&rsquo;ai décidé de ne pas me lancer dans cette direction, pour une raison simple : <strong>le risque financier non maîtrisé</strong>.</p>
+<p>Un agent autonome connecté à une API payante, sans limite stricte configurée, c&rsquo;est une surface d&rsquo;exposition financière que je ne voulais pas gérer ce soir-là. Ce n&rsquo;est pas une question de coût absolu, c&rsquo;est une question de contrôle.</p>
+<blockquote>
+<p>Avant de connecter quoi que ce soit à une API facturée à l&rsquo;usage, il faut poser des limites claires : budget max, alertes, kill switch. Sinon, c&rsquo;est une mauvaise surprise garantie.</p>
+</blockquote>
+<hr>
+<h2 id="ce-que-jen-retiens">Ce que j&rsquo;en retiens</h2>
+<p>Cette exploration rapide m&rsquo;a confirmé quelques points :</p>
+<ul>
+<li><strong>Ollama</strong> est mature et simple à déployer — à garder sous la main pour du lab local</li>
+<li><strong>OpenClaw</strong> est un projet intéressant, surtout pour un homelab avec un peu de GPU</li>
+<li><strong>CPU-only pour les LLMs</strong>, c&rsquo;est viable uniquement pour du batch ou du test, pas de l&rsquo;interactif</li>
+<li>La prochaine étape logique serait un nœud avec GPU dédié — sujet pour un futur article</li>
+</ul>
+<p>Je reviendrai sur OpenClaw quand mon infrastructure sera mieux adaptée. En attendant, le lab continue.</p>
+<p>— <strong>Altins752</strong></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
