@@ -6,6 +6,7 @@ tags: ["meta", "workflow", "écriture", "outillage"]
 description: "Mon workflow de rédaction : de l'idée brute à l'article publié, sans friction."
 showToc: true
 TocOpen: false
+mermaid: true
 ---
 
 ## Le problème de la page blanche
@@ -20,16 +21,13 @@ J'ai cherché un workflow qui élimine ce frein. Voici ce que j'ai mis en place.
 
 ## Vue d'ensemble du workflow
 
-```txt
-Idée / exploration
-      ↓
-Dictée vocale (Wispr Flow)
-      ↓
-Mise en forme assistée
-      ↓
-Relecture & validation personnelle
-      ↓
-git push → GitHub Actions → en ligne
+```mermaid
+flowchart TD
+    A[Idée] --> B[Dictée vocale]
+    B --> C[Mise en forme assistée]
+    C --> D[Relecture]
+    D --> E[git push]
+    E --> F[En ligne 🚀]
 ```
 
 Chaque étape est volontairement légère. L'objectif est de réduire la résistance entre l'idée et la publication.
