@@ -20,7 +20,7 @@ J'ai cherché un workflow qui élimine ce frein. Voici ce que j'ai mis en place.
 
 ## Vue d'ensemble du workflow
 
-```
+```txt
 Idée / exploration
       ↓
 Dictée vocale (Wispr Flow)
