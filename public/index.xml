@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Altins752 — Security &amp; DevOps</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Altins752 — Security &amp; DevOps</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bienvenue sur Altins752</title>
+      <link>http://localhost:1313/posts/premier-post/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/premier-post/</guid>
+      <description>Premier post, mise en place du blog.</description>
+      <content:encoded><![CDATA[<p>Bienvenue sur mon blog technique. Ici je publierai des write-ups CTF, des projets sécu et DevOps.</p>
+<h2 id="ce-que-tu-trouveras-ici">Ce que tu trouveras ici</h2>
+<ul>
+<li><strong>Write-ups CTF</strong> — HackTheBox, TryHackMe</li>
+<li><strong>Projets DevOps</strong> — Infrastructure, automatisation, homelab</li>
+<li><strong>Sécu</strong> — Outils, techniques, retours d&rsquo;expérience</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>À propos</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Passionné de sécurité et DevOps, je publie ici mes write-ups CTF et projets techniques.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Passionné de sécurité et DevOps, je publie ici mes write-ups CTF et projets techniques.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

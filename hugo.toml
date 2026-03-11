@@ -1,0 +1,42 @@
+baseURL = "https://altins.fr/"
+languageCode = "fr-FR"
+title = "Altins752 — Security & DevOps"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  author = "Altins752"
+  description = "Write-ups CTF, projets sécu et DevOps"
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowFullTextinRSS = true
+
+[params.homeInfoParams]
+  Title = "Altins752"
+  Content = "Security researcher · DevOps Engineer · Write-ups CTF & projets techniques"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/altins752"
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Projets"
+    url = "/projects/"
+    weight = 2
+  [[menu.main]]
+    name = "À propos"
+    url = "/about/"
+    weight = 3
+
+[markup.highlight]
+  style = "monokai"
+  lineNos = true
