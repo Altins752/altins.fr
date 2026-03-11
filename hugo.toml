@@ -1,4 +1,4 @@
-baseURL = "http://altins.fr"
+baseURL = "https://altins.fr"
 languageCode = "fr-FR"
 title = "Altins752 — Security & DevOps"
 theme = "PaperMod"
